@@ -14,3 +14,14 @@ class Recipe_Input(forms.ModelForm):
     class Meta:
         model = Recipe
         fields = ["title", "author", "desc", "time", "instructions"]
+
+
+class Login_Form(forms.Form):
+    username = forms.CharField(max_length=50)
+    password = forms.CharField(widget=forms.PasswordInput)
+
+
+class Staff_Recipe(forms.ModelForm):
+    class Meta:
+        model = Recipe
+        fields = ["title", "author", "desc", "time", "instructions"]

@@ -1,5 +1,17 @@
 <h1>Welcome to Recipebox</h1>
-<a href="/addauthor">Create New Author</a>
+
+{% if request.user.is_active %}
+    <a href="/logout">Logout</a>
+    <br>
+    <br>
+    {% if request.user.is_staff %}
+        <a href="/addauthor">Create New Author</a>
+    {% endif %}
+{% else %}
+    <a href="login">Login</a>
+    <br>
+    <br>
+{% endif %}
 <a href="/addrecipe">Add A New Recipe</a>
 <br>
 <br>
