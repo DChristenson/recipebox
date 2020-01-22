@@ -1,5 +1,10 @@
 <h1>Welcome to Recipebox</h1>
-    {% for item in data %}
-        <a href="/recipes/{{ item.id }}/">{{ item.title }}</a>
-        <br>
-    {% endfor %}
+<a href="/addauthor">Create New Author</a>
+<a href="/addrecipe">Add A New Recipe</a>
+<br>
+<br>
+{% for item in data %}
+    <a href="/recipes/{{ item.id }}/">{{ item.title }}</a>
+    <br>
+    <br>
+{% endfor %}

@@ -1,7 +1,7 @@
-{% for item in data  %}
+{% for item in data %}
     {{ item.title }}
     <br>
-    <a href="/author/{{ item.id }}/">{{ item.author }}</a>
+    <a href="/author/{{ item.author.id }}/">{{ item.author }}</a>
     <br>
     {{ item.time }}
     <br>
