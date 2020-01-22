@@ -1,0 +1,11 @@
+{% for item in author %}
+    {{ item.name }}
+    <br>
+    {{ item.body }}
+    <br>
+{% endfor %}
+
+{% for item in recipe %}
+    <a href="/recipes/{{ item.id }}/">{{ item.title }}</a>
+    <br>
+{% endfor %}

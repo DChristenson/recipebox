@@ -1,0 +1,1 @@
+This is a basic recipe box made with Django

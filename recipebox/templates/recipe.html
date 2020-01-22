@@ -1,0 +1,11 @@
+{% for item in data  %}
+    {{ item.title }}
+    <br>
+    <a href="/author/{{ item.id }}/">{{ item.author }}</a>
+    <br>
+    {{ item.time }}
+    <br>
+    {{ item.desc }}
+    <br>
+    {{ item.instructions }}
+{% endfor %}
